@@ -1,4 +1,4 @@
-Level05 - 
+Level05 - Повышающие флаги - зло.
 
 1. Видим что есть внутренний mail. Писбма хранятся в папке /var/spool/mail/. Видим в письме ссылку на строку
     crontab */2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05;
